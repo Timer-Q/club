@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>信用卡还款</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" type="text/css" href="css/layout.css" />
+		<!--<link rel="stylesheet" type="text/css" href="css/mui.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/app.css"/>
+		<link rel="stylesheet" type="text/css" href="css/mui.dtpicker.css"/>
+		<link rel="stylesheet" type="text/css" href="css/mui.picker.css"/>-->
+	</head>
+	<body>
+		<header class="header">
+			<a href="javascript:history.go(-1)" class="header-icon"> < 返回</a>
+			<h1 class="header-title">信用卡还款</h1>
+			<a href="javascript:;" class="header-icon">管理</a>
+		</header>
+		<div class="content">
+			<div class="card">
+				<div class="card-header">
+					<a href="javascript:;" class="bank-logo">
+						<img src="images/cmb-icon.png"/>
+					</a>
+					<div class="card-header-text">
+						<p>招商银行</p>
+						<p class="card-info">王小二 | 尾号9668</p>
+						<span class="tools"> > </span>
+					</div>
+				</div>
+				<div class="card-footer">
+					<span>查询信用卡账单</span>
+					<span class="tools"> > </span>
+				</div>
+			</div>
+			<div class="form-content">
+				<div class="form-group">
+					<label for="" class="form-label">卡券类型</label>
+					<select name="" class="form-control">
+						<option value="">111</option>
+						<option value="">222</option>
+						<option value="">333</option>
+						<option value="">444</option>
+					</select>
+				</div>
+				<div class="form-group">
+					<label for="" class="form-label">到账时间</label>
+					<input type="text" class="form-control" value="09/28"/>
+					<span class="tools"> > </span>
+				</div>
+				<!--<button id='date' data-options='{"value":"2015-10-10 10:10","beginYear":2010,"endYear":2020}' class="btn mui-btn mui-btn-block">选择日期时间 ...</button>-->
+			</div>
+			<p class="btn-group btn-group-margin">
+				<button class="btn btn-slarge btn-default">确定</button>
+			</p>
+		</div>
+		<!--<div id='result' class="ui-alert"></div>
+		<script src="js/mui.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/mui.picker.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/mui.dtpicker.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+			(function($) {
+				$.init();
+				var result = $('#result')[0];
+				var btns = $('.btn');
+				btns.each(function(i, btn) {
+					btn.addEventListener('tap', function() {
+						var optionsJson = this.getAttribute('data-options') || '{}';
+						var options = JSON.parse(optionsJson);
+						var id = this.getAttribute('id');
+						/*
+						 * 首次显示时实例化组件
+						 * 示例为了简洁，将 options 放在了按钮的 dom 上
+						 * 也可以直接通过代码声明 optinos 用于实例化 DtPicker
+						 */
+						var picker = new $.DtPicker(options);
+						picker.show(function(rs) {
+							/*
+							 * rs.value 拼合后的 value
+							 * rs.text 拼合后的 text
+							 * rs.y 年，可以通过 rs.y.vaue 和 rs.y.text 获取值和文本
+							 * rs.m 月，用法同年
+							 * rs.d 日，用法同年
+							 * rs.h 时，用法同年
+							 * rs.i 分（minutes 的第二个字母），用法同年
+							 */
+							result.innerText = '选择结果: ' + rs.text;
+							/* 
+							 * 返回 false 可以阻止选择框的关闭
+							 * return false;
+							 */
+							/*
+							 * 释放组件资源，释放后将将不能再操作组件
+							 * 通常情况下，不需要示放组件，new DtPicker(options) 后，可以一直使用。
+							 * 当前示例，因为内容较多，如不进行资原释放，在某些设备上会较慢。
+							 * 所以每次用完便立即调用 dispose 进行释放，下次用时再创建新实例。
+							 */
+							picker.dispose();
+						});
+					}, false);
+				});
+			})(mui);
+		</script>-->
+	</body>
+</html>
